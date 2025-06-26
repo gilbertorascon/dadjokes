@@ -16,7 +16,6 @@ window.addEventListener('load', () => {
             const config = { headers: { Accept: 'application/json' } };
             const res = await fetch(url, config);
             const data = await res.json();
-            console.log(data);
             const joke = data.joke;
             return joke;
 
